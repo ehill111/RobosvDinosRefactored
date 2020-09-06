@@ -8,21 +8,25 @@ namespace RobotsVsDinosaursRefactored
 {
     class Fleet
     {   //Member variables have/has a/an...
-        List<Robot> robots;
+        public List<Robot> robots;
 
         //Constructor makes mold.
-        public void CreateRobotList()
+        public Fleet()
         {
-            //Methods do something.
-            List<Robot> robots = new List<Robot>();
-            for (int i = 0; i < 3; i++)
-            {
-                robots.Add();
-            }
+            List<Robot> robots = new List<Robot>();//Instantiated list.
+            Robot robot1 = new Robot("Magnum");//Instantiated robots for the list.
+            Robot robot2 = new Robot("Valiant");//Passed in mandatory string values.
+            Robot robot3 = new Robot("Formidable");
+            robots.Add(robot1);//Add allowed use of dot notation to pass in values.
+            robots.Add(robot2);
+            robots.Add(robot3);
+
+
+
         }
-       
-        
 
-
+      
+                
+                
     }
 }

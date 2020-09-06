@@ -8,19 +8,18 @@ namespace RobotsVsDinosaursRefactored
 {
     class Dinosaur
     {   //Member variables have/has a/an...
-        string type;
-        int health;
-        int energy;
-        int attackPower;
+        public string type;
+        public int health;
+        public int energy;
+        public int attackPower;
         //Constructor makes mold.
-        public Dinosaur()
+        public Dinosaur(string name)
         {
-            Dinosaur dinosaur = new Dinosaur();
             health = 10;
             energy = 10;
             attackPower = 10;
             //type comes later
-
+            
         }
 
 

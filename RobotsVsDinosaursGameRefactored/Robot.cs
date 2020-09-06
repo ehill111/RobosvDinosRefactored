@@ -15,14 +15,14 @@ namespace RobotsVsDinosaursRefactored
         public int attackPower;
         
         //Constructor makes mold.
-        public Robot()
+        public Robot(string name)
         {
-            Robot robot = new Robot();
+            this.name = name;
             health = 10;
             powerLevel = 10;
             attackPower = 10;
             //Weapon type will be assigned later.
-
+         
         }
     }
 }
