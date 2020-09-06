@@ -20,11 +20,11 @@ namespace RobotsVsDinosaursRefactored
             energy = 10;
             attackPower = 10;
             //type comes later
+
         }
-      
+
 
     }
-
 
         //Methods do something.
 
