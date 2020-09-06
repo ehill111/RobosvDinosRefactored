@@ -11,18 +11,36 @@ namespace RobotsVsDinosaursRefactored
         public string name;
         public int health;
         public int powerLevel;
-        public Weapon type;
+        public Weapon weapon;
         public int attackPower;
+        public List<Weapon> type;
         
         //Constructor makes mold.
-        public Robot(string name)
+        public Robot(string name, string weaponType)
         {
+            //Random rnd = new Random();
+            //{ "Club", "Axe", "Sword" };
+
+            //Weapon weapon = new Weapon(weaponType);
+            List<Weapon> weapons = new List<Weapon>();
+            Weapon weapon1 = new Weapon("Club");
+            Weapon weapon2 = new Weapon("Axe");
+            Weapon weapon3 = new Weapon("Sword");
+            weapons.Add(weapon1);
+            weapons.Add(weapon2);
+            weapons.Add(weapon3);
+
             this.name = name;
-            health = 10;
-            powerLevel = 10;
-            attackPower = 10;
-            //Weapon type will be assigned later.
-         
+            health = 100;
+            powerLevel = 100;
+             
+            Random attackPowerRng = new Random();
+            attackPower = attackPowerRng.Next(50, 101);
+             
+            
+            
+           
+
         }
     }
 }

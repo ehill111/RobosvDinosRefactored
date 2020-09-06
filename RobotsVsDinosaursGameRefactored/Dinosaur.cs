@@ -15,9 +15,9 @@ namespace RobotsVsDinosaursRefactored
         //Constructor makes mold.
         public Dinosaur(string name)
         {
-            health = 10;
-            energy = 10;
-            attackPower = 10;
+            health = 100;
+            energy = 100;
+            attackPower = 100;
             //type comes later
             
         }

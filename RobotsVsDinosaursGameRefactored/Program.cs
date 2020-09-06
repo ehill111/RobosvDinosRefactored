@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +8,18 @@ namespace RobotsVsDinosaursRefactored
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            Robot robot = new Robot("Glockosaurus", "Bullet-Spitter");
+
+        }
+
+
+
+
+
+
     }
+
+   
 }

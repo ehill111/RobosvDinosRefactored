@@ -14,9 +14,9 @@ namespace RobotsVsDinosaursRefactored
         public Fleet()
         {
             List<Robot> robots = new List<Robot>();//Instantiated list.
-            Robot robot1 = new Robot("Magnum");//Instantiated robots for the list.
-            Robot robot2 = new Robot("Valiant");//Passed in mandatory string values.
-            Robot robot3 = new Robot("Formidable");
+            Robot robot1 = new Robot("Magnum", "Axe");//Instantiated robots for the list.
+            Robot robot2 = new Robot("Valiant", "Club");//Passed in mandatory string values.
+            Robot robot3 = new Robot("Formidable", "Sword");
             robots.Add(robot1);//Add allowed use of dot notation to pass in values.
             robots.Add(robot2);
             robots.Add(robot3);
