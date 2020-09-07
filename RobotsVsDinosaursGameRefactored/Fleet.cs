@@ -20,7 +20,8 @@ namespace RobotsVsDinosaursRefactored
             robots.Add(robot1);//Add allowed use of dot notation to pass in values.
             robots.Add(robot2);
             robots.Add(robot3);
-
+            
+            
 
 
         }

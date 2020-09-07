@@ -8,7 +8,7 @@ namespace RobotsVsDinosaursRefactored
 {
     class Herd
     {   //Member variables have/has a/an...
-        List<Dinosaur> dinosaurs;
+        public List<Dinosaur> dinosaurs;
 
         //Constructor makes mold.
         public Herd()
@@ -20,6 +20,7 @@ namespace RobotsVsDinosaursRefactored
             dinosaurs.Add(dinosaur1);//Constructor adds three dinosaurs to list.
             dinosaurs.Add(dinosaur2);
             dinosaurs.Add(dinosaur3);
+            
         }
 
 

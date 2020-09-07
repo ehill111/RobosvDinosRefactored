@@ -6,22 +6,27 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinosaursRefactored
 {
-    class Dinosaur
+    public class Dinosaur
     {   //Member variables have/has a/an...
         public string type;
         public int health;
         public int energy;
         public int attackPower;
         //Constructor makes mold.
-        public Dinosaur(string name)
+        public Dinosaur(string type)
         {
+
+            this.type = type;
             health = 100;
             energy = 100;
-            attackPower = 100;
+            Random attackPowerRng = new Random();
+            attackPower = attackPowerRng.Next(50, 101);
             //type comes later
-            
         }
-
+        public void AttackRobot(Robot AttackedRobot)
+        {
+            AttackedRobot.health -= attackPower
+        }
 
     }
 

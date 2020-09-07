@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinosaursRefactored
 {
-    class Weapon
+    public class Weapon
     {   //Member variables have/has a/an...
-        public string weaponType;
+        public string type;
         public int attackPower;
-        
+
+                
         //Constructor makes mold.
-        public Weapon(string weaponType)
+        public Weapon(string type)
         {
-            this.weaponType = weaponType;
-           
+            this.type = type;
+            Random rng = new Random();
+            attackPower = rng.Next(50, 101);
         }
 
 

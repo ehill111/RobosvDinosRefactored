@@ -10,7 +10,8 @@ namespace RobotsVsDinosaursRefactored
     {
         static void Main(string[] args)
         {
-            Robot robot = new Robot("Glockosaurus", "Bullet-Spitter");
+            Robot robot = new Robot("Valiant", "club");
+
 
         }
 
